@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Offer | Vanguard University School of Medicine</title>
+
+<style>
+:root{
+  --maroon:#7a1e2d;
+  --text-dark:#1a1a1a;
+  --border-light:#e6e6e6;
+  --gold:#d4af37;
+}
+
+body{
+  margin:0;
+  font-family:"Georgia","Times New Roman",serif;
+  background:#ffffff;
+  color:var(--text-dark);
+  line-height:1.75;
+  overflow-x:hidden;
+  animation:fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.page-wrapper{
+  max-width:880px;
+  margin:90px auto;
+  padding:52px 44px;
+  background:#ffffff;
+  border-radius:22px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.08);
+  position:relative;
+  z-index:2;
+}
+
+header{text-align:center;margin-bottom:56px}
+header img{
+  height:72px;
+  margin-bottom:18px;
+  animation:logoFade 2s ease forwards;
+}
+@keyframes logoFade{
+  from{opacity:0;transform:translateY(-12px)}
+  to{opacity:1;transform:none}
+}
+
+.logo-rule{
+  width:120px;
+  height:1.5px;
+  background:var(--maroon);
+  margin:0 auto 28px;
+}
+
+h1{font-size:30px;color:var(--maroon);margin-bottom:6px;}
+h2{font-size:18px;color:#444;font-weight:400;line-height:1.5;}
+.divider{height:1px;background:var(--border-light);margin:48px 0;}
+
+.celebrate{text-align:center;margin-bottom:42px;}
+.congrats{
+  font-size:36px;color:var(--maroon);letter-spacing:1px;
+  position:relative;display:inline-block;
+  animation:softPulse 3s ease-in-out infinite;
+}
+@keyframes softPulse{
+  0%{text-shadow:0 0 0 rgba(212,175,55,0)}
+  50%{text-shadow:0 0 18px rgba(212,175,55,0.45)}
+  100%{text-shadow:0 0 0 rgba(212,175,55,0)}
+}
+.congrats::after{
+  content:"";
+  position:absolute;left:50%;bottom:-10px;width:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:translateX(-50%);
+  animation:underlineReveal 2s ease forwards;
+}
+@keyframes underlineReveal{to{width:140px}}
+.celebrate p{margin-top:20px;font-size:16px;}
+
+section{margin-bottom:42px}
+section h3{color:var(--maroon);font-size:18px;margin-bottom:14px}
+section p,li{font-size:15.7px;margin-bottom:14px}
+ul{padding-left:22px}
+footer{margin-top:72px;font-size:14px;text-align:center;color:#555;}
+
+.confetti,.popper{position:fixed;inset:0;pointer-events:none;z-index:999;}
+.confetti span{
+  position:absolute;
+  background:var(--c);
+  opacity:0.9;
+  border-radius:1px;
+  animation:fall 6s linear forwards;
+}
+@keyframes fall{
+  from{transform:translateY(-10vh) rotate(0deg)}
+  to{transform:translateY(110vh) rotate(720deg);opacity:0}
+}
+.popper span{
+  position:absolute;
+  background:var(--c);
+  opacity:0.95;
+  border-radius:1px;
+}
+@keyframes popperBurst{
+  0%{transform:translate(0,0) rotate(0);opacity:1}
+  60%{transform:translate(var(--bx),var(--by)) rotate(var(--r1))}
+  100%{transform:translate(calc(var(--bx)*1.3), calc(var(--by) + 900px)) rotate(var(--r2));opacity:0;}
+}
+</style>
+</head>
+<body>
+
+<div class="confetti" id="confetti"></div>
+<div class="popper" id="popper"></div>
+
+<div class="page-wrapper">
+<header>
+  <img src="https://lh3.googleusercontent.com/d/1UR9-rM9Ge7iWEixw_P-FJ4334uHjnKHS" alt="VUSOM Logo">
+  <div class="logo-rule"></div>
+  <h1>Admission Offer</h1>
+  <h2>Doctor of Medicine (MD) Program<br>Vanguard University School of Medicine</h2>
+</header>
+
+<div class="divider"></div>
+
+<div class="celebrate">
+  <div class="congrats">Congratulations</div>
+  <p>We are pleased to formally offer you admission to the Doctor of Medicine (MD) Program at Vanguard University School of Medicine.</p>
+</div>
+
+<section>
+<p>On behalf of the Faculty and the Admissions Committee of Vanguard University School of Medicine, we are delighted to extend this offer of admission for the upcoming academic year.</p>
+<p>Your application demonstrated strong academic preparation, intellectual rigor, and a clear readiness for the demands of medical education. Following a comprehensive and holistic review, the Committee is confident in your ability to contribute meaningfully to the academic and professional life of our institution.</p>
+</section>
+
+<section>
+<h3>An Academic Community</h3>
+<p>Vanguard University School of Medicine is committed to excellence in medical education, clinical practice, and scholarship. Students are educated in an environment that values disciplined inquiry, ethical responsibility, and service to society.</p>
+<p>By accepting this offer, you will join a community dedicated to:</p>
+<ul>
+<li>Mastery of foundational and clinical sciences</li>
+<li>Thoughtful, evidence-based medical practice</li>
+<li>Professional integrity and lifelong learning</li>
+<li>Leadership in an evolving global healthcare landscape</li>
+</ul>
+<p>The curriculum is rigorous, intentionally designed, and supported by close faculty mentorship to ensure academic and professional success.</p>
+</section>
+
+<section>
+<h3>Standards and Expectations</h3>
+<p>This offer of admission is contingent upon the continued demonstration of high academic performance, professional conduct, and the fulfillment of all program prerequisites and institutional requirements.</p>
+</section>
+
+<section>
+<h3>Enrollment</h3>
+<p>Applicants who choose to accept this offer must complete all enrollment requirements, including submission of the required tuition deposit, by the stated deadline. Detailed instructions will be provided through the admissions portal.</p>
+</section>
+
+<section>
+<h3>Conclusion</h3>
+<p>We recognize the significance of this achievement and commend you on reaching this stage of the admissions process. The faculty and administration of Vanguard University School of Medicine look forward to welcoming the next class of medical students.</p>
+</section>
+
+<footer>
+<p>Office of Admissions<br>Vanguard University School of Medicine<br>
+<a href="mailto:Admissions@vusom.org" style="color:#7a1e2d;text-decoration:none">Admissions@vusom.org</a></p>
+</footer>
+</div>
+
+<script>
+const colors=['#7A1E2D','#C85A6A','#FFD700','#FF6F61','#4F9DA6','#6A4C93','#2E8B57','#FFFFFF'];
+const bg=document.getElementById('confetti');
+for(let i=0;i<240;i++){
+  const s=document.createElement('span');
+  const size=4+Math.random()*6;
+  s.style.width=size+'px';
+  s.style.height=size*2+'px';
+  s.style.left=Math.random()*100+'vw';
+  s.style.top='-10vh';
+  s.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
+  s.style.animationDelay=Math.random()*3+'s';
+  bg.appendChild(s);
+}
+
+const pop=document.getElementById('popper');
+function firePopper(origin){
+  for(let i=0;i<160;i++){
+    const p=document.createElement('span');
+    const size=4+Math.random()*6;
+    p.style.width=size+'px';
+    p.style.height=size*2.2+'px';
+    p.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
+    p.style.left=origin;
+    p.style.top='85vh';
+    const angle=Math.random()*120-30;
+    const power=260+Math.random()*520;
+    p.style.setProperty('--bx',Math.cos(angle*Math.PI/180)*power+'px');
+    p.style.setProperty('--by',-Math.abs(Math.sin(angle*Math.PI/180)*power)+'px');
+    p.style.setProperty('--r1',Math.random()*360+'deg');
+    p.style.setProperty('--r2',Math.random()*720+'deg');
+    p.style.animation=popperBurst ${4+Math.random()*2}s cubic-bezier(.2,.8,.2,1) forwards;
+    pop.appendChild(p);
+  }
+}
+firePopper('6vw');
+firePopper('94vw');
+setTimeout(()=>{bg.remove();pop.remove();},18000);
+</script>
+
+</body>
+</html>
